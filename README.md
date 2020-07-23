@@ -1,3 +1,3 @@
 # health-misinformation
 
-To run varoius LDA methods on health-misinformation datasets
+To run various LDA methods on health-misinformation datasets
