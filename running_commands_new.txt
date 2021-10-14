@@ -1,0 +1,8 @@
+java -cp "dist/segan.jar:lib/*" sampler.supervised.regression.SNLDA --dataset health-data --word-voc-file health_10/health-data/slda-supervised/health-data.wvoc --word-file health_10/health-data/slda-supervised/health-data.dat --info-file health_10/health-data/slda-supervised/health-data.docinfo --output-folder health_10/health-data/snlda-supervised  --Ks 15,4 --burnIn 50 --maxIter 100 --sampleLag 25 --report 5 --init random --alphas 0.1,0.1 --betas 1.0,0.5,0.1 --pis 0.5,0.5 --gammas 100,10 --rho 1.0 --mu 0.0 --sigmas 0.01,2.5,5.0  -v -d -z -train
+
+
+ java -Xmx15000M -Xms15000M -cp 'dist/segan.jar:lib/*' data.ResponseTextDataset --dataset health-data --text-data raw_text.txt --response-file response_text.txt  --data-folder health_10 --format-folder slda-supervised --run-mode process -v -d --u 5 -s -l --bs 10 --b 5 
+
+
+java  -cp "dist/segan.jar:lib/*" sampler.supervised.regression.SNLDA --dataset health-data --word-voc-file health_10/health-data/slda-supervised/health-data.wvoc --word-file health_10/health-data/slda-supervised/health-data.dat --info-file health_10/health-data/slda-supervised/health-data.docinfo --output-folder health_10/health-data/slda-supervised  --Ks 15,4 --burnIn 50 --maxIter 100 --sampleLag 25 --report 5 --init random --alphas 0.1,0.1 --betas 1.0,0.5,0.1 --pis 0.5,0.5 --gammas 100,10 --rho 1.0 --mu 0.0 --sigmas 0.01,2.5,5.0  -v -d -z -train
+
